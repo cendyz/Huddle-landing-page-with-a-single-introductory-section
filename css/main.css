@@ -51,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(257, 40%, 49%);
-  background-image: url("../../img/bg-mobile.svg");
+  background-image: url("../img/bg-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -107,7 +107,7 @@ body {
 
 @media (min-width: 992px) {
   body {
-    background-image: url("../../img/bg-desktop.svg");
+    background-image: url("../img/bg-desktop.svg");
     background-size: cover;
   }
   .main {
