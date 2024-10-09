@@ -1,0 +1,66 @@
+@use "./mixins" as mixins;
+@use "./animations" as animations;
+@use "./colors" as colors;
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: colors.$violet;
+	background-image: url("../../img/bg-mobile.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+}
+
+.main {
+	padding: 2em;
+	max-width: 23.438em;
+
+	&__logo {
+		width: 50%;
+	}
+
+	&__bg {
+		margin: 3em 0;
+		width: 100%;
+	}
+
+	&__box {
+		text-align: center;
+		&-title {
+			margin-bottom: 0.7em;
+			font-size: 2.5rem;
+		}
+		&-text {
+			margin-bottom: 2em;
+			font-family: "Poppins", sans-serif;
+			font-size: 1.5rem;
+		}
+		&-btn {
+			margin-bottom: 6em;
+			padding: 0.8em 5.5em;
+			width: fit-content;
+			border-radius: 1.5em;
+			-webkit-box-shadow: 0px 5px 10px 0px rgba(60, 60, 60, 1);
+			-moz-box-shadow: 0px 5px 10px 0px rgba(60, 60, 60, 1);
+			box-shadow: 0px 5px 10px 0px rgba(60, 60, 60, 1);
+			color: grey;
+		}
+	}
+	&__icons {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		column-gap: 1.1em;
+
+		&-box {
+			position: relative;
+			padding: 0.5em;
+			border-radius: 50%;
+			border: 1px solid white;
+		}
+	}
+}
