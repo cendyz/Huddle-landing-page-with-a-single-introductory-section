@@ -77,10 +77,9 @@ body {
 		padding-top: 0;
 		padding-bottom: 0;
 		max-width: 90em;
-		height: 600px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr;
 
 		&__logo {
 			grid-area: 1/1/2/3;
@@ -102,15 +101,17 @@ body {
 			padding: 2.5em;
 			&-title {
 				margin-bottom: 0.3em;
-				font-size: 4.5rem;
+				font-size: clamp(3rem, calc(3rem + ((46 - 30) * ((100vw - 996px) / (1440 - 996)))), 4.6rem);
+
+				font-weight: 600;
 			}
 			&-text {
 				margin-bottom: 1em;
-				font-size: 1.9rem;
+				font-size: clamp(1.2rem, calc(1.2rem + ((19 - 12) * ((100vw - 996px) / (1440 - 996)))), 1.9rem);
 			}
 			&-btn {
-				padding: 0.8em 3.5em;
-				font-size: 1.9rem;
+				padding: 0.8em 2.6em;
+				font-size: clamp(1.2rem, calc(1.2rem + ((19 - 12) * ((100vw - 996px) / (1440 - 996)))), 1.9rem);
 				transition: background-color 0.2s, color 0.2s;
 
 				&:hover {
